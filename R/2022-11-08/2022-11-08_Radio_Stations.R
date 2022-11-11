@@ -26,7 +26,15 @@ state_stations = setDT(state_stations)
 station_info = setDT(station_info)
 
 
+
+
 state_stations = state_stations[, c("freq", "V1", "V2") := tstrsplit(frequency, " ", fixed = TRUE)][]
+
+index = match(state_stations$call_sign, station_info$call_sign)
+
+state_stations$service = station_info[index, ]$service
+
+state_stations[which(is.na(state_stations$V1)), ]$V1 = state_stations[which(is.na(state_stations$V1)), ]$service
 
 state_stations = state_stations[which(!is.na(state_stations$V1))]
 
@@ -92,7 +100,8 @@ gr = ggplot() +
     
     geom_point(data = df, 
                aes(x = lng, y = lat),
-               alpha = .3, color = "#990000", shape = 19) +
+               alpha = .3, shape = 21,
+               color = "#990000", fill = "#990000") +
     
     facet_wrap(vars(modulation), ncol = 1) +
     
