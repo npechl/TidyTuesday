@@ -177,7 +177,7 @@ multi = (gr2 | gr1)  +
         title = 'Programming Languages',
         
         subtitle = paste0(
-            "Famous programming languages based on number of users - ",
+            "Widely used programming languages based on number of users - ",
             "*point size* - and number of job openings - *y-axis*"
         ),
         
