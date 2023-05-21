@@ -150,7 +150,7 @@ gr = ggplot(data = df) +
         title = 'Tornados',
         
         subtitle = paste0(
-            "Magnitude of every tornado per state from 1950 to 2022."
+            "Tornado magnitudes by state, 1950-2022"
         ),
         
         caption = paste0(
