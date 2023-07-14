@@ -83,6 +83,7 @@ gr = ggplot(data = df, aes(x = date, y = value)) +
     scale_fill_manual(values = paletteer_d("ggsci::planetexpress_futurama")) +
     
     scale_x_date(expand = c(0, 0), date_breaks = "10 years", date_labels = "%Y", minor_breaks = NULL) +
+    scale_y_continuous(labels = scales::unit_format(suffix = " °C")) +
     
     theme_minimal(base_family = my_font) +
     
@@ -100,6 +101,8 @@ gr = ggplot(data = df, aes(x = date, y = value)) +
         axis.ticks.y = element_line(linewidth = .3, color = "grey75"),
         
         axis.title = element_blank(),
+        
+        axis.text.y = element_text(face = "bold", margin = margin(r = 5)),
         
         plot.title    = element_text(face = "bold", size = 32, family = my_font),
         plot.subtitle = element_markdown(margin = margin(b = 15), size = 11, color = "grey20", family = my_font),
