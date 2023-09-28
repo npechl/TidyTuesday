@@ -1,10 +1,11 @@
-# CRAN Package Authors
+# Roy Kent F**k count
 
-It's time for [posit::conf(2023L)](https://posit.co/conference/)!
-To celebrate, the data this week comes from the [CRAN collaboration graph](https://github.com/schochastics/CRAN_collaboration), a project by David Schoch.
+For Deepsha Menghani's talk on [Data Viz animation and interactivity in Quarto](https://deepshamenghani.github.io/posit_plotly_crosstalk/#/title-slide), she watched each episode of Ted Lasso at 2X speed and diligently noted down every F*bomb and gesture reference, and then made it into the [richmondway R package](https://github.com/deepshamenghani/richmondway)!
 
-> The CRAN collaboration graph consists of R package developers who are connected if they appear together as authors of an R package in the DESCRIPTION file.
+What is Ted Lasso and who is Roy Kent? 
 
-> The “Hadley number” is defined as the distance of R developers to Hadley Wickham in the collaboration graph. 
+[Ted Lasso](https://en.wikipedia.org/wiki/Ted_Lasso) is a TV show that "follows Ted Lasso, an American college football coach who is hired to coach an English soccer team with the secret intention that his inexperience will lead it to failure, but whose folksy, optimistic leadership proves unexpectedly successful."
 
-See the [README of the GitHub project](https://github.com/schochastics/CRAN_collaboration#readme) for a fun exploration of the data, and to see how it was gathered.
+[Roy Kent](https://ted-lasso.fandom.com/wiki/Roy_Kent) is one of the main characters who goes from captain of AFC Richmond to one of the coaches. Particularly in early seasons, he's a man of few words, but many of them are f**k, expressed in various moods - mad, sad, happy, amused, loving, surprised, thoughtful, and joyous. 
+
+This dataset includes the number, percentage, and context of f**k used in the show for each episode.
