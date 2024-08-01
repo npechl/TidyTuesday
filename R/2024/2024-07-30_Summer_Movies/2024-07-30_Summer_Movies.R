@@ -98,7 +98,7 @@ gr = df |>
     ) +
     
     labs(
-        y = "**Weighted Average** of all the Individual User Ratings on **IMDb**",
+        y = "**Weighted Average** of all the Individual User Ratings **on IMDb**",
         x = "**Release Year** of a Movie/Video/tvMovie",
         
         title = "Summer Movies",
