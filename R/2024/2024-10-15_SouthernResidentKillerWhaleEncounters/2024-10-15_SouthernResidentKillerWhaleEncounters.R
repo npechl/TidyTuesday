@@ -83,17 +83,24 @@ gr <- d1 |>
     ggplot() +
     
     geom_sf(
-        data = world, fill = "grey90", 
-        linewidth = .1, color = "grey"
+        data = world, fill = "grey20", color = NA
+        # linewidth = .1, color = "grey"
     ) +
     
     coord_sf(xlim = c(-18.5e5, -16e5), ylim = c(5.5e5, 8e5)) +
+    
+    geom_curve(
+        aes(x = begin_longitude_t, y = begin_latitude_t, xend = end_longitude_t, yend = end_latitude_t),
+        arrow = arrow(length = unit(0.015, "inches"), type = "closed"),
+        lineend = "round", curvature = 0.15, linewidth = .35,
+        color = "black" # |> lighten(.5)
+    ) +
         
     geom_curve(
         aes(x = begin_longitude_t, y = begin_latitude_t, xend = end_longitude_t, yend = end_latitude_t),
-        arrow = arrow(length = unit(0.01, "inches"), type = "closed"),
-        lineend = "round", curvature = 0.15, linewidth = .2,
-        color = "#d81d45" |> darken(.5)
+        arrow = arrow(length = unit(0.015, "inches"), type = "closed"),
+        lineend = "round", curvature = 0.15, linewidth = .25,
+        color = "#EFC000" # |> lighten(.5)
     ) +
     
     facet_wrap(vars(year), nrow = 2) +
