@@ -1,0 +1,14 @@
+---
+title: "TidyTuesday Gallery"
+page-layout: full
+title-block-banner: false
+listing:
+  contents: posts
+  type: grid
+  sort: "date desc"
+  categories: true
+  sort-ui: false
+  filter-ui: true
+  fields: [image, date, title, description]
+  page-size: 24
+---

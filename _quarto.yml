@@ -1,0 +1,25 @@
+project:
+  type: website
+  output-dir: _site
+  render:
+    - index.qmd
+    - posts/*.qmd
+
+website:
+  title: "TidyTuesday by npechl"
+  description: "A gallery of #TidyTuesday visualisations"
+  site-url: "https://npechl.github.io/TidyTuesday/"
+  repo-url: "https://github.com/npechl/TidyTuesday"
+  navbar:
+    left:
+      - text: Gallery
+        href: index.qmd
+    right:
+      - icon: github
+        href: "https://github.com/npechl/TidyTuesday"
+
+format:
+  html:
+    theme: cosmo
+    page-layout: full
+    title-block-banner: false

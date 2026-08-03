@@ -1,0 +1,30 @@
+[project]
+
+site_name = "TidyTuesday by npechl"
+site_description = "A gallery of #TidyTuesday visualisations"
+site_url = "https://npechl.github.io/TidyTuesday-zensical/"
+
+# Only the gallery index is in the sidebar nav; the ~100 per-week pages are
+# still built and reachable via the cards on that page, just not listed.
+nav = [
+  { "Gallery" = "index.md" },
+]
+
+[project.theme]
+language = "en"
+
+[[project.theme.palette]]
+scheme = "default"
+toggle.icon = "lucide/sun"
+toggle.name = "Switch to dark mode"
+
+[[project.theme.palette]]
+scheme = "slate"
+toggle.icon = "lucide/moon"
+toggle.name = "Switch to light mode"
+
+[project.markdown_extensions.attr_list]
+[project.markdown_extensions.md_in_html]
+
+[project.markdown_extensions."zensical.extensions.glightbox"]
+auto = true
